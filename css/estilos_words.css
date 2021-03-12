@@ -1,0 +1,15 @@
+.word {
+    margin-left: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+}
+
+
+.traduction {
+    margin-left: 1.5rem;
+}
+
+.traduction::before {
+    content: "-";
+    margin-right: 1rem;
+}

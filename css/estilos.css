@@ -7,15 +7,20 @@
 }
 
 body {
+    width: 100%;
     font-size: 18px;
     background-color: rgb(175, 170, 170);
     color:#0f0e0e;
     font-family: 'Concert One', cursive;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .menu {
     background-color: rgb(81, 143, 143);
     margin: 0 0 20px 0;
+    flex-basis: 100%;
 }
 
 .menu__lista {
@@ -54,15 +59,20 @@ h2 {
     margin: 10px;
 }
 
+div{
+    width: 90%;
+}
+
 pre {
     font-size: 14px;
     white-space: pre-line;
     margin-left: 20px;
     margin-bottom: 20px;
+    line-height: 1.6;
 }
 
 
-@media screen and (min-width:762px) {
+@media screen and (min-width:768px) {
     .menu__lista {
         height: 100px;
         align-items: center;
@@ -73,5 +83,9 @@ pre {
         width: 100%;
         margin:0;
         text-align: center;
+    }
+
+    div {
+        width: 50%;
     }
 }
